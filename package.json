@@ -1,0 +1,55 @@
+{
+  "name": "wishgee-front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@auth0/auth0-spa-js": "^1.8.1",
+    "@material-ui/core": "^4.11.2",
+    "@sentry/react": "^5.29.1",
+    "@sentry/tracing": "^5.29.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "dotenv": "^8.2.0",
+    "firebase": "^7.19.0",
+    "mixpanel-browser": "^2.41.0",
+    "rc-slider": "^9.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-firebaseui": "^5.0.2",
+    "react-responsive-carousel": "^3.2.21",
+    "react-responsive-modal": "^5.0.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.1",
+    "tailwindcss": "^1.8.12"
+  },
+  "scripts": {
+    "build:tailwind": "tailwindcss build src/tailwind.css -o src/tailwind.generated.css",
+    "prestart": "npm run build:tailwind",
+    "prebuild": "npm run build:tailwind",
+    "start": "react-scripts start",
+    "build-prod-win": "set NODE_ENV=production && set REACT_APP_ENV=production && react-scripts build",
+    "build-prod": "NODE_ENV=production REACT_APP_ENV=production react-scripts build",
+    "build-staging": "NODE_ENV=staging REACT_APP_ENV=staging react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "sass": "^1.45.2"
+  }
+}

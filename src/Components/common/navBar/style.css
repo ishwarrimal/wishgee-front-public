@@ -1,0 +1,119 @@
+/* auth container */
+.auth-container {
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+}
+
+.sign-up-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  fill: white;
+}
+
+.user-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ea2027;
+  border-radius: 10px;
+  padding: 5px 8px 5px 8px;
+  cursor: pointer;
+  position: relative;
+  z-index: 9999;
+}
+
+.user-box span {
+  color: white;
+}
+
+.user-image {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.user-image img {
+  object-fit: cover;
+  max-width: 35px;
+  max-height: 35px;
+}
+
+.logged-icon {
+  width: 10px;
+  height: 10px;
+  fill: white;
+  margin-left: 10px;
+}
+
+.drop-down {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  background-color: white;
+  border-radius: 10px;
+  top: 50px;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+}
+
+.top-bar-right > button:nth-child(1) {
+  background-color: #fff;
+  border: 2px solid #ed2737;
+  padding: 5px 15px;
+  border-radius: 25px;
+  color: #ed2737;
+  font-weight: 700;
+}
+
+.top-bar-right > button:nth-child(2) {
+  border: 2px solid #ed2737;
+  background-color: #ed2737;
+  padding: 5px 15px;
+  border-radius: 25px;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* For firebase login */
+.profilephoto {
+  padding-top: 15px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilephoto img {
+  border-radius: 50%;
+  width: auto;
+  height: 90px;
+}
+
+#firebaseui_container {
+  margin-top: 50px;
+}
+
+.text-avatar {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffcc33;
+}
+
+.border-top-red {
+  border-top: 2px solid #ea2027;
+}

@@ -1,0 +1,11 @@
+@media only screen and (max-width: 650px) {
+  .product-list-container {
+    justify-content: space-around;
+  }
+}
+
+.products-container {
+  .MuiOutlinedInput-input {
+    padding: 8.5px 14px;
+  }
+}

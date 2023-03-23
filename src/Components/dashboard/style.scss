@@ -1,0 +1,42 @@
+$border-color: #eee0e0;
+$important-color: #fdf8f0;
+$main-color: #ed2737;
+
+.dashboardContainer {
+  margin-top: 90px;
+}
+
+.left-panel {
+  p {
+    cursor: pointer;
+  }
+  .selected {
+    color: $main-color;
+    font-weight: bold;
+    background-color: $important-color;
+    border-radius: 8px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .left-panel {
+    top: 24px;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0px 4px 4px "rgb(206 206 206 / 25%)";
+    border-bottom: 2px solid #eee;
+    justify-content: space-between;
+    p {
+      border-right: 1px solid #eee;
+      text-align: center;
+      padding: 0.75rem 0;
+      width: 33.33%;
+    }
+    .selected {
+      border-radius: 0;
+    }
+  }
+  .dashboardContainer {
+    margin-top: 124px;
+  }
+}

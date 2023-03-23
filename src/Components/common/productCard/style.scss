@@ -1,0 +1,113 @@
+.products-container-detail {
+  width: 13rem;
+  min-width: 222px;
+  margin-right: 20px;
+  box-shadow: 4px 4px 4px rgba(219, 219, 219, 0.25);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid lightgray;
+  padding: 12px;
+  position: relative;
+
+  .requirement-details {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: #f3f3f3;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom: inherit;
+    &:hover {
+      text-overflow: clip;
+      white-space: normal;
+    }
+  }
+}
+
+.products-container-detail > .closing-remark {
+  width: 90%;
+  font-size: 0.75rem;
+  line-height: 18px;
+  /* identical to box height, or 183% */
+  text-align: left;
+  color: #808080;
+  overflow-y: auto;
+  max-height: 72px;
+  ul {
+    list-style-type: disc;
+  }
+}
+
+.products-details-img {
+  height: 11rem;
+  width: auto;
+}
+
+.products-details-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.products-container-detail > h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #2d2d2d;
+  margin-top: 12px;
+  padding: 0;
+  line-height: 16px;
+  height: 32px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
+
+.products-container-detail > span {
+  background-color: #f3f3f3;
+  height: 1px;
+  width: 100%;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.buy-now-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 12px;
+}
+.buy-now-sec .product-price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ed2737;
+}
+.buy-now-sec .main-cta {
+  background-color: #ed2737;
+  border-radius: 25px;
+  padding: 4px 15px;
+  color: white;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 550px) {
+  .buy-now-sec {
+    flex-direction: column;
+  }
+  .buy-now-sec > button {
+    margin-top: 8px;
+    font-size: 18px;
+  }
+}

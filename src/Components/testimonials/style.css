@@ -1,0 +1,127 @@
+.carousel-root {
+  margin: auto !important;
+  margin-top: 3% !important;
+}
+
+.carousel-root .carousel {
+  padding-bottom: 60px;
+}
+
+.carousel .slide {
+  background: none !important;
+  color: black;
+  height: 100%;
+}
+
+.carousel .slide img {
+  width: 139px !important;
+  border-radius: 50%;
+}
+
+.myCarousel {
+  text-align: left;
+}
+
+.myCarousel .myCarouselText {
+  padding-left: 3rem;
+}
+
+.myCarousel .myCarouselQuote {
+  padding-top: 12px;
+}
+
+.carousel .control-dots {
+  padding-left: 5px !important;
+  outline: 0;
+}
+
+.myCarousel h3 {
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  margin-top: 32px;
+  line-height: 29px;
+  color: #2d2d2d;
+  font-size: 21px;
+}
+
+.myCarousel h4 {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #ea2027;
+}
+
+.myCarousel p {
+  font-weight: 100 !important;
+  line-height: 45px !important;
+  font-size: 28px;
+  color: #222;
+}
+
+.carousel .control-dots .dot {
+  box-shadow: none !important;
+  background: #454545 !important;
+  outline: 0;
+}
+
+.carousel.carousel-slider .control-arrow {
+  /* background: #000 !important;
+  height: 50px !important;
+  position: absolute;
+  top: 35% !important; */
+}
+
+@media only screen and (max-width: 934px) {
+  .carousel-root {
+    outline: 0;
+    width: 93% !important;
+    margin: auto !important;
+  }
+
+  .carousel.carousel-slider .control-arrow {
+    display: none !important;
+  }
+  .myCarousel {
+    /* background: #fafafa;
+    margin-top: -9%;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8%;
+    padding-bottom: 12.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 1px solid #ddd;
+    height: 269px; */
+  }
+
+  .carousel .slide img {
+    width: 24% !important;
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .myCarousel .myCarouselQuote {
+    padding-top: 0;
+  }
+  .myCarousel .myCarouselQuote svg {
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .myCarousel .myCarouselQuote {
+    margin-top: -14px;
+  }
+  .myCarousel .myCarouselQuote svg {
+    width: 20px;
+  }
+  .myCarousel .myCarouselText {
+    padding-left: 1rem;
+  }
+  .myCarousel p {
+    font-size: 20px;
+    line-height: 38px !important;
+  }
+}

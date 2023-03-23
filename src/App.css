@@ -1,0 +1,51 @@
+.App {
+  position: relative;
+  min-height: calc(100vh - 90px);
+}
+
+/* @media only screen and (max-width: 1400px) {
+  .App {
+    padding-bottom: 500px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .App {
+    padding-bottom: 560px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .App {
+    padding-bottom: 560px;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .App {
+    padding-bottom: 600px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .App {
+    min-height: 100vh;
+    padding-bottom: 620px;
+  }
+} */
+
+@media only screen and (max-width: 550px) {
+  .App {
+    min-height: 100vh;
+    /* padding-bottom: 620px; */
+  }
+}
+
+.emailVerifyPopup > div {
+  color: white;
+  background-color: rgb(90, 150, 110);
+}
+
+button:focus {
+  outline: 0;
+}
